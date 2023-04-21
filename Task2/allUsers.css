@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Search bar */
+.searchUsers {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search {
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  border: 2px solid snow;
+background: transparent;
+  border-radius: 5px 0 0 5px;
+}
+
+button[type="submit"] {
+  width: 100px;
+  height: 40px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Form actions */
+.formAction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete, .edit {
+  width: 80px;
+  height: 30px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #f44336;
+}
+
+.edit {
+  background-color: #008CBA;
+}
+
+/* Edit form */
+.editForm {
+  background-color: #f2f2f2;
+}
+
+.editForm input[type="text"], .editForm input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.editForm input[type="submit"] {
+  width: auto;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Error message */
+.error {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.noData {
+  position: relative;
+  display: flex;
+margin-left:20%;
+  color:snow;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  width:280px;
+  margin: 10px;
+}
+@media screen and (max-width:460px){
+.noData{
+  width:80px;
+}
+}
